@@ -15,7 +15,15 @@ The second file we will need, and which is referenced in the final line of our D
 Finally, we have an HTML file we name pong.html that we’ve created in a directory called ‘static’. Pong.html is referenced in app.py
 
 
-We build the image (don’t forget the dot at the end of the command to signal to build from the current directory) and then we run the container, built from the image.
+We build the image (don’t forget the dot at the end of the command to signal to build from the current directory). 
+
+docker build -t ping-pong .
+
+
+Then, we run the container, built from the image.
+
+docker run -p 4000:80 ping-pong
+
 
 Because we’ve mapped the host port 4000 to port 80 in the container, when we visit this URL endpoint, we will be served the html from pong.html
 
