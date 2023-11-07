@@ -19,11 +19,13 @@ We build the image (don’t forget the dot at the end of the command to signal t
 
 docker build -t ping-pong .
 
+<br>
 
 Then, we run the container, built from the image.
 
 docker run -p 4000:80 ping-pong
 
+<br>
 
 Because we’ve mapped the host port 4000 to port 80 in the container, when we visit this URL endpoint, we will be served the html from pong.html
 
