@@ -27,6 +27,6 @@ Then, we run the container, built from the image.
 
 <br>
 
-Because we’ve mapped the host port 4000 to port 80 in the container, when we visit this URL endpoint, we will be served the html from pong.html
+Because we’ve mapped the host port 4000 to port 80 in the container, when we visit this URL endpoint: http://127.0.0.1:4000/ping, we will be served the html from pong.html
 
 ![image](https://github.com/xanderstevenson/ping-pong/assets/27918923/f0f0183b-e0f1-4461-b327-bd9c199c8ab6)
