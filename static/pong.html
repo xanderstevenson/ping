@@ -1,10 +1,43 @@
-from flask import Flask, send_from_directory
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .ping-pong {
+            position: relative;
+            width: 75px;
+            height: 20px;
+            padding: 5px auto;
+            align-content: center;
+            text-align: center;
+            font-weight: bold;
+            font: 25px;
+        }
 
-app = Flask(__name__)
+        #ping {
+            background-color: rgb(85, 255, 0);
+            animation: bounce 10s infinite;
+        }
 
-@app.route('/ping', methods=['GET'])
-def ping():
-    return send_from_directory('static', 'pong.html')
+        #pong {
+            background-color: rgb(34, 0, 255);
+            animation: bounce 12s infinite;
+            color: white;
+        }
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+        @keyframes bounce {
+            0% { left: 0; }
+            50% { left: calc(100% - 50px); }
+            100% { left: 0; }
+        }
+
+        body {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="ping-pong" id="ping">Ping</div>
+    <div class="ping-pong" id="pong">Pong</div>
+</body>
+</html>
