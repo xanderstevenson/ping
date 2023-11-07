@@ -19,5 +19,4 @@ We build the image (don’t forget the dot at the end of the command to signal t
 
 Because we’ve mapped the host port 4000 to port 80 in the container, when we visit this URL endpoint, we will be served the html from pong.html
 
-
-![image](https://github.com/xanderstevenson/ping-pong/assets/27918923/8de79d77-642e-4624-94de-22879e6bb998)
+![image](https://github.com/xanderstevenson/ping-pong/assets/27918923/f0f0183b-e0f1-4461-b327-bd9c199c8ab6)
