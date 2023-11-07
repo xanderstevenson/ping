@@ -8,11 +8,11 @@ This is used as a basic demo to teach Docker basics to users and is mentioned in
 
 We can create our own dDocker image that will consist of just 3 tiny files and will run as a flask app inside our Docker container, serving a webpage.
 
-There is the Dockerfile, which will be used when we run the 'docker build' command to build the image to our specifications
+There is the [Dockerfile](https://github.com/xanderstevenson/ping-pong/blob/main/Dockerfile), which will be used when we run the 'docker build' command to build the image to our specifications
 
-The second file we will need, and which is referenced in the final line of our Dockerfile is the app.py
+The second file we will need, and which is referenced in the final line of our Dockerfile is the [app.py](https://github.com/xanderstevenson/ping-pong/blob/main/app.py).
 
-Finally, we have an HTML file we name pong.html that we’ve created in a directory called ‘static’. Pong.html is referenced in app.py
+Finally, we have an HTML file we name [pong.html](https://github.com/xanderstevenson/ping-pong/blob/main/static/pong.html) that we’ve created in a directory called ‘static’. Pong.html is referenced in app.py
 
 
 We build the image (don’t forget the dot at the end of the command to signal to build from the current directory). 
