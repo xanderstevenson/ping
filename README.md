@@ -17,13 +17,13 @@ Finally, we have an HTML file we name [pong.html](https://github.com/xandersteve
 
 We build the image (don’t forget the dot at the end of the command to signal to build from the current directory). 
 
-docker build -t ping-pong .
+```docker build -t ping-pong .```
 
 <br>
 
 Then, we run the container, built from the image.
 
-docker run -p 4000:80 ping-pong
+```docker run -p 4000:80 ping-pong```
 
 <br>
 
